@@ -60,11 +60,11 @@ if DATABASE_URL:
 
 UPSTREAM_REPO = environ.get('UPSTREAM_REPO', '')
 if len(UPSTREAM_REPO) == 0:
-    UPSTREAM_REPO = 'https://kawin:Fj-Pk5srUAVEUSEbncG4@gitlab.com/kawinpattanai1/Z-Mirror'
+    UPSTREAM_REPO = 'https://kawinpattanai1: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@github.com/kawinpattanai1/kawin'
 
 UPSTREAM_BRANCH = environ.get('UPSTREAM_BRANCH', '')
 if len(UPSTREAM_BRANCH) == 0:
-    UPSTREAM_BRANCH = 'zh_run'
+    UPSTREAM_BRANCH = 'run'
 
 if ospath.exists('.git'):
     srun(["rm", "-rf", ".git"])
